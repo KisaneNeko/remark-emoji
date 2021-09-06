@@ -3,7 +3,7 @@ import emoji from 'node-emoji';
 import { emoticon } from 'emoticon';
 
 const RE_EMOJI = /:\+1:|:-1:|:[\w-]+:/g;
-const RE_SHORT = /[$@|*'",;.=:\-)([\]\\/<>038BOopPsSdDxXzZ]{2,5}/g;
+const RE_SHORT = /(?:^|\s)([$@|*'",;.=:\-)([\]/<>038BOopPsSdDxXzZ]{2,5})/g;
 
 const DEFAULT_SETTINGS = {
     padSpaceAfter: false,
